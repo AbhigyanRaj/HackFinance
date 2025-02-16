@@ -3,7 +3,7 @@
 **PocketBank** is a secure **SMS-based microfinance platform** designed to provide banking and lending services to **unbanked communities**. This system enables users to perform **transactions, savings, and micro-loans** via **SMS**, using AI-powered credit scoring and dummy banking integration.
 
 ## 🚀 Live Demo
-🔗 **[PocketBank Web Simulation](https://your-website-link.com)**
+🔗 **[PocketBank Web Simulation](https://your-website-link.com)** (Replace with actual link)
 
 ---
 
@@ -35,62 +35,9 @@
 ## 🌜 System Architecture
 
 ### **UML Diagram**
-Below is the **PlantUML diagram** illustrating the system workflow.
+Below is the **UML diagram** illustrating the system workflow.
 
-```plantuml
-@startuml
-title PocketBank System Overview
-
-actor User
-actor Admin
-database Firebase
-database TwilioAPI
-database AI_Loan_System
-database Dummy_Bank
-database UPI_API
-
-User --> (Register via SMS)
-User --> (Login via OTP)
-User --> (Check Balance)
-User --> (Request Loan)
-User --> (Send Money)
-User --> (Repay Loan)
-User --> (View Loan Status)
-
-rectangle "SMS Processing" {
-    (Register via SMS) --> TwilioAPI
-    (Login via OTP) --> TwilioAPI
-    (Check Balance) --> TwilioAPI
-    (Request Loan) --> TwilioAPI
-    (Send Money) --> TwilioAPI
-    (Repay Loan) --> TwilioAPI
-    (View Loan Status) --> TwilioAPI
-}
-
-rectangle "Loan Processing & AI Approval" {
-    TwilioAPI --> AI_Loan_System : "Evaluate Creditworthiness"
-    AI_Loan_System --> Firebase : "Store Loan Status"
-    AI_Loan_System --> Dummy_Bank : "Approve/Reject Loan"
-}
-
-rectangle "Banking & Transactions" {
-    TwilioAPI --> Dummy_Bank : "Process Transactions"
-    Dummy_Bank --> Firebase : "Update Balance"
-    Dummy_Bank --> (Send Money)
-    Dummy_Bank --> (Receive Loan)
-    Dummy_Bank --> (Repay Loan)
-    Dummy_Bank --> UPI_API : "Simulate UPI Payment"
-}
-
-rectangle "Admin Control Panel" {
-    Admin --> (Approve/Reject Loan Requests)
-    Admin --> (Monitor Transactions)
-    Admin --> (User Reports & Analytics)
-    Admin --> Dummy_Bank : "Update Loan Records"
-}
-
-@enduml
-```
+![UML Diagram](Uml.png)
 
 ---
 
@@ -218,7 +165,6 @@ We welcome contributions! Follow these steps:
 ## 🏆 Credits
 
 👨‍💻 **Developed by**: **Abhigyann Raj**  
-📧 **Contact**: [your-email@example.com](mailto:your-email@example.com)  
 
 ---
 
