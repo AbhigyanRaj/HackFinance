@@ -3,7 +3,13 @@
 **PocketBank** is a secure **SMS-based microfinance platform** designed to provide banking and lending services to **unbanked communities**. This system enables users to perform **transactions, savings, and micro-loans** via **SMS**, using AI-powered credit scoring and dummy banking integration.
 
 ## 🚀 Live Demo
-🔗 **[PocketBank Web Simulation](https://your-website-link.com)** (Replace with actual link)
+🔗 **[PocketBank Web Simulation](https://pocketbankiiitd.netlify.app/)**
+
+
+### **UML Diagram**
+Below is the **UML diagram** illustrating the system workflow.
+
+![UML Diagram](Uml.png)
 
 ---
 
@@ -33,11 +39,6 @@
 ---
 
 ## 🌜 System Architecture
-
-### **UML Diagram**
-Below is the **UML diagram** illustrating the system workflow.
-
-![UML Diagram](Uml.png)
 
 ---
 
